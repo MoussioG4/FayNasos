@@ -4,12 +4,23 @@ body{
 
 #main-content{
     height: 100%;
+    padding: 0px;
+}
+
+#home1_content{
+    height: 100vh;
 }
 
 #home1{
-    height: 100vh;
     background: url('../pics/pic1.jpeg') no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /* header nav*/
@@ -44,29 +55,32 @@ body{
 
 #home2{
     margin: 0px;
-    height: 100vh;
+    height: 100%;
     background-color: #c9c0bb;
 }
 
 .home2_content{
-    margin-top: 25%;
+    align-content: center;
+    margin-top: 20%;
 }
 
 #home2_pic{
     background: url('../pics/pic2.jpeg') no-repeat;
-    background-size: cover;
     height: 30vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-size:100% auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     
 }
 
 #home2_text{
+    margin-top: 10%;
     color: #191970;
-    font-size: 30px;
     margin-left: 20%;
     font-weight: bold;
+    font-size: 3vw;
 }
 
 #home2_text a:link{
@@ -77,27 +91,27 @@ body{
 
 #home3{
     margin: 0px;
-    height: 100vh;
+    height: 100%;
     background-color: #c9c0bb;
 }
 
 .home3_content{
-    margin-top: 25%;
+    margin-top: 30%;
+    align-content: center;
+    margin-bottom: 20%;
 }
 
 #home3_pic{
     background: url('../pics/pic3.jpeg') no-repeat;
-    background-size: cover;
     height: 30vh;
-    margin-left: 20%;
-    margin-right: 10px;
+    background-size:100% auto;
+    margin: auto;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-    
 }
 
 #home3_text{
     color: #191970;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
     margin-left: 20%;
 }
