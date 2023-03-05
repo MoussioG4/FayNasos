@@ -20,6 +20,12 @@ body{
     height: 100vh;
 }
 
+#countdown{
+    font-size: 48px;
+    margin-left: 37%;
+    margin-top: 10%;
+}
+
 /* header nav*/
 #header-nav{
     margin-left: 10px;
