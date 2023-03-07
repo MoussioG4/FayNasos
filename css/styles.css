@@ -5,33 +5,75 @@ body{
     font-size: 36px;
 }
 
+/* navbar */
+.navbar-style-init{
+    padding-top:3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navbar-style-scroll{
+    padding-top:3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    opacity: 0.7;
+    background-color: black;
+}
+
+.nav-link{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home-link{
+    text-decoration: none;
+    color: white;
+}
+
+#navbarNavAltMarkupP{
+    width: 250px;
+}
+
+#rsvp-button{
+    height: 70px;
+    width: 110px;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* main content */
 #main-content{
     height: 100%;
     padding: 0px;
 }
 
-
-
+/* home1 */
 #home1{
     background: url('../pics/pic1.jpeg') no-repeat;
     background-size:100% 100%;
     height: 100vh;
     border-bottom: 4px solid black;
     color: white;
-    font-size: 48px;
+    padding-top: 4%;
+    text-align: center;
+}
+
+#home1-content{
+    padding-top: 15%;
+    font-size: 36px;
     text-align: center;
 }
 
 /* home2 */
 
 #home2{
-    margin: 0px;
-    
+    margin: 0px;  
 }
 
 .home2_content{
     align-content: center;
-    
 }
 
 #home2_pic{
@@ -49,10 +91,6 @@ body{
     margin-top: 35%;
     margin-left: 20%;
     font-size: 36px;
-}
-
-#home2_text a:link{
-    
 }
 
 /* home3 */
@@ -81,6 +119,8 @@ body{
     font-size: 36px;
 }
 
-#home3_text a:link{
+/* media queries */
+@media (min-width: 992px) {
     
 }
+
