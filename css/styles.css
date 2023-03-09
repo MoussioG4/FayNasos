@@ -8,13 +8,13 @@ body{
 /* navbar */
 .navbar-style-init{
     padding-top:3%;
-    padding-left: 3%;
+    padding-left: 1.5%;
     padding-right: 3%;
 }
 
 .navbar-style-scroll{
     padding-top:3%;
-    padding-left: 3%;
+    padding-left: 1.5%;
     padding-right: 3%;
     opacity: 0.7;
     background-color: black;
@@ -78,7 +78,6 @@ body{
 }
 
 /* home2 */
-
 #home2{
     margin: 0px;  
 }
@@ -90,7 +89,7 @@ body{
 #home2_pic{
     background: url('../pics/ekklisia.jpg') no-repeat;
     height: 40vh;
-    background-size:100% auto;
+    background-size:100% 100%;
     border: 4px solid black;
     margin-top: 37%;
     margin-left: 10%;
@@ -106,7 +105,6 @@ body{
 }
 
 /* home3 */
-
 #home3{
     margin: 0px;
 }
@@ -118,7 +116,7 @@ body{
 #home3_pic{
     background: url('../pics/zattero.jpg') no-repeat;
     height: 40vh;
-    background-size:100% auto;
+    background-size:100% 100%;
     border: 4px solid black;
     margin-top: 38%;
     margin-left: 10%;
@@ -133,7 +131,6 @@ body{
 }
 
 /* home4 */
-
 #home4{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -147,8 +144,8 @@ body{
 }
 
 hr {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 4.5%;
     flex: 1;
     border: none;
     height: 2px;
@@ -165,6 +162,92 @@ hr {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* home5 */
+#home5{
+    background: url('../pics/pic3.jpeg') no-repeat;
+    background-size:100% 100%;
+    min-height: 80vh;
+    min-width: 80vh;
+    margin-left: 3%;
+    margin-right: 4.5%;
+    border-bottom: 4px solid black;
+    color: white;
+    padding-top: 4%;
+    text-align: center;
+}
+
+#rsvp-button2{
+    height: 50px;
+    width: 150px;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* home5 */
+.home6_I{
+    color: black;
+    font-size: 18px;
+    margin-top: 5%;
+    padding-left: 13%;
+}
+
+.home6_II{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.home6_II > p{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.home6_II > p > a{
+    color: black;
+}
+
+.home6_III{
+    color: black;
+    font-size: 18px;
+    margin-top: 5%;
+    padding-right: 13%;
+    text-align: right;
+}
+
+.home7_I{
+    color: black;
+    font-size: 18px;
+    margin-top: 5%;
+    padding-left: 13%;
+}
+
+.home7_I > a{
+    color: black;
+}
+
+.home7_II{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.home7_II > a{
+    color: black;
+}
+
+.home7_III{
+    color: black;
+    font-size: 18px;
+    margin-top: 5%;
+    padding-right: 13%;
+    text-align: right;
+}
+
+.home7_III > a{
+    color: black;
+}
+
 
 /* media queries */
 @media (min-width: 992px) {

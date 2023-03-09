@@ -1,4 +1,23 @@
-// Set the date we're counting down to
+//Adjust the navbar backround from transparent (scrolled to top) to black (scrolled down)
+document.addEventListener('scroll', function navbar_background(){
+  let classes = document.querySelector("#navbar").className;
+  const scroll = window.scrollY;  
+  
+  if (scroll < 30) {
+    if (classes.indexOf("navbar-style-init") == -1){
+      classes = classes.replace(new RegExp("navbar-style-scroll", "g"), "navbar-style-init");
+      document.querySelector("#navbar").className = classes;
+    }
+  }
+  else {
+    if (classes.indexOf("navbar-style-scroll") == -1){
+      classes = classes.replace(new RegExp("navbar-style-init", "g"), "navbar-style-scroll");
+      document.querySelector("#navbar").className = classes;
+    }
+  };
+});
+
+  // Set the date we're counting down to
 var countDownDate = new Date("Sep 9, 2023 17:00:00").getTime();
 
 // Update the count down every 1 second
@@ -27,47 +46,38 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-//Adjust the navbar backround from transparent (scrolled to top) to black (scrolled down)
-window.addEventListener('scroll', function navbar_background(){
-  let classes = document.querySelector("#navbar").className;
-  const scroll = window.scrollY;  
-  
-  if (scroll < 30) {
-    if (classes.indexOf("navbar-style-init") == -1){
-      classes = classes.replace(new RegExp("navbar-style-scroll", "g"), "navbar-style-init");
-      document.querySelector("#navbar").className = classes;
-    }
-  }
-  else {
-    if (classes.indexOf("navbar-style-scroll") == -1){
-      classes = classes.replace(new RegExp("navbar-style-init", "g"), "navbar-style-scroll");
-      document.querySelector("#navbar").className = classes;
-    }
-  };
-});
 
-// On page load (before images or css)
-document.addEventListener("DOMContentLoaded", function (event) {
- 
-});
 
 (function (global) {
 
   var fn = {};
 
+  var homeHtml = "snippets/home-snippet.html";
+
   // Convinienve function for inserting innerHtmL for 'select'
   var insertHtml = function (selector, html) {
-    var targetElem = document.querySelector(selector);
+    let targetElem = document.querySelector(selector);
     targetElem.innerHTML = html;
-};
+  };
 
-// Show loading icon inside element identified by 'selector'
-var showLoading = function(selector) {
-    var html = "<div class='text-center'>";
-    html += "<img src='pictures/ajax-loader.gif'></div>";
-    insertHtml(selector, html);
-}
+  // Show loading icon inside element identified by 'selector'
+  var showLoading = function(selector) {
+      var html = "<div class='text-center'>";
+      html += "<img src='pictures/ajax-loader.gif'></div>";
+      insertHtml(selector, html);
+    };
+  
+ // On page load (before images or css)
+ document.addEventListener("DOMContentLoaded", function (event) {
 
-global.fn = fn;
+  // On first load show home view
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(homeHtml, function (responseText) {
+      document.querySelector("#main-content").innerHTML = responseText;
+  },
+  false);
+});
+
 
 })(window);
+
