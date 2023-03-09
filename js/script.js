@@ -29,10 +29,10 @@ var x = setInterval(function() {
 
 //Adjust the navbar backround from transparent (scrolled to top) to black (scrolled down)
 window.addEventListener('scroll', function navbar_background(){
-  var classes = document.querySelector("#navbar").className;
+  let classes = document.querySelector("#navbar").className;
   const scroll = window.scrollY;  
   
-  if (scroll == 0) {
+  if (scroll < 30) {
     if (classes.indexOf("navbar-style-init") == -1){
       classes = classes.replace(new RegExp("navbar-style-scroll", "g"), "navbar-style-init");
       document.querySelector("#navbar").className = classes;
