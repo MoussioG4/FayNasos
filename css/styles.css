@@ -98,7 +98,6 @@ body{
     background: url('../pics/ekklisia.jpg') no-repeat;
     height: 70vh;
     background-size:100% 100%;
-    border: 4px solid black;
     margin-top: 17%;
     margin-left: 10%;    
 }
@@ -123,7 +122,6 @@ body{
     background: url('../pics/zattero.jpg') no-repeat;
     height: 80vh;
     background-size:100% 100%;
-    border: 4px solid black;
     margin-top: 17%;
 }
 
@@ -284,6 +282,7 @@ hr {
 /* rsvp2 */
 #rsvp2{
     margin-top: 10%;
+    padding-bottom: 10%;
     padding-left: 20%;
     padding-right: 20%;
     font-size: 24px;
@@ -294,6 +293,72 @@ hr {
     text-align: center;
     font-size: 36px;
     margin-bottom: 10%;
+}
+
+#rsvp_deadline{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.rsvp_label{
+    font-size: 24px;
+}
+
+#name{
+    margin-bottom: 20px;
+}
+
+.input{
+    height: 30px;
+    width: 250px;
+}
+
+.option{
+    font-size: 16px;
+}
+
+#contact_form{
+    margin-bottom: 20px;
+}
+
+#contact{
+    margin-bottom: 20px;
+}
+
+#attendance_form{
+    margin-bottom: 20px;
+}
+
+#date_name{
+    margin-bottom: 20px;
+}
+
+#date_input{
+    width: 400px;
+}
+
+#message_input{
+    width: 100%;
+}
+
+#allergies_form{
+    height: fit-content;
+}
+
+#submit_button{
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: black;
+    color: white;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* media queries */
