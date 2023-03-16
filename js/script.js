@@ -106,3 +106,28 @@ window.onload = function() {
   global.$fn = fn;
 
 })(window);
+
+// Function to send rsvp mail
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rsvpfaynasos@gmail.com",
+    Password : "PAOK.1926",
+    To : 'moussio@protonmail.com',
+    From : document.getElementById("mail_input").value,
+    Subject : "RSVP " + document.getElementById("surname_input").value,
+    Body : "Όνομα: " + document.getElementById("given_name_input").value
+         + "<br> Επώνυμο: " + document.getElementById("surname_name_input").value
+         + "<br> Τρόπος επικοινωνίας: " + document.getElementById("contact_selector").value
+         + "<br> Τηλέφωνο: " + document.getElementById("phone_input").value
+         + "<br> E-Mail: " + document.getElementById("mail_input").value
+         + "<br> Θα παρευρεθείτε στο γάμο: " + document.getElementById("attendance_selector").value
+         + "<br> Θα έχετε συνοδό: " + document.getElementById("date_selector").value
+         + "<br> Ονοματεπώνυμο συνοδού: " + document.getElementById("date_name").value
+         + "<br> Διατροφικές διαταραχές: " + document.getElementById("allergies_selector").value
+         + "<br> Διατροφικές διαταραχές: " + document.getElementById("message_input").value
+}).then(
+  message => alert("Σας ευχαριστούμε")
+);
+}

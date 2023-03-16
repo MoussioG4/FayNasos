@@ -14,10 +14,10 @@
     <div id="name" class="row">
         <div class="col-lg-6 col-md-12">
           <label for="given_name_input" class="rsvp_label">Όνομα*:</label>
-          <input id="given_name_input" class="input" type="text">
+          <input id="given_name_input" class="input" type="text" placeholder="Όνομα" required>
         </div><!-- End of given name input -->
         <div class="col-lg-6 col-md-12">
-          <label for="surname_input" class="rsvp_label">Επώνυμο*:</label>       
+          <label for="surname_input" class="rsvp_label" placeholder="Επώνυμο" required>Επώνυμο*:</label>       
           <input id="surname_input" class="input" type="text">
         </div><!-- End of surname input -->
     </div><!-- End of name input -->
@@ -38,7 +38,7 @@
       </div><!-- End of phone input -->
       <div class="col-lg-6 col-md-12">
         <label for="mail_input" class="rsvp_label">E-Mail*:</label>       
-        <input id="mail_input" class="input" type="text">
+        <input id="mail_input" class="input" type="email">
       </div><!-- End of mail input -->
   </div><!-- End of contact input -->
 
@@ -64,22 +64,22 @@
 
     <div id="date_name">
       <label for="date_name" class="rsvp_label">Ονοματεπώνυμο συνοδού*:</label>
-      <input id="date_input" class="input" type="text">
+      <input id="date_name" class="input" type="text">
     </div><!-- Date date name input -->
 
     <div id="allergies_form">
       <label for="allergies_selector" class="rsvp_label">Έχετε διατροφικές διαταραχές που θα πρέπει να γνωρίζουμε;*:</label>
-      <select name="date_selector" id="date_selector" class="input">
+      <select name="allergies_selector" id="allergies_selector" class="input">
         <option value="" disabled selected>Επιλέξτε</option>
         <option value="phone">Ναι</option>
         <option value="mail">Όχι</option>
       </select>
       <div>
-        <label for="meessage_input" id="message_text">Εάν ναι, ποιές είναι αυτές:</label>
+        <label for="message_input" id="message_text">Εάν ναι, ποιές είναι αυτές:</label>
         <textarea id="message_input" type="text" rows="4"></textarea>
       </div>
     </div><!-- End of alergies form input -->
     <div id="rsvp_deadline"><p>DEALINE RSVP</p></div>
-    <div><button type="button" id="submit_button">Υποβολή</button></div>
+    <div><button type="submit" id="submit_button" onsubmit="sendEmail(); reset(); return false">Υποβολή</button></div>
       
 </div><!-- #rsvp2 -->
